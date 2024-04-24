@@ -3,8 +3,9 @@
     grid-template-columns: 2fr;
     margin: 0;
     padding: 0;
+    border-style:groove;
     list-style-type:none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(231, 231, 231, 0.767);
     border-radius: 1rem;    
 }
 
@@ -18,7 +19,20 @@
     color: #fff;   
 }
 
+.detailPoke{
+    display: flex;
+    flex-direction:row;
+    justify-content:center ;
+    align-items:self-end;
+    width: 100%;
+    padding: 1 rem;
+}
 
+.detailPoke button{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 1rem;
+}
 .pagination{
     display: flex;
     flex-direction: row;
@@ -106,6 +120,7 @@
     color:#fff;
     margin-bottom: .25rem;
     text-transform: capitalize;
+    text-decoration: underline;
 }
 
 .pokemon .detail{

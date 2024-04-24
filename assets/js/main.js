@@ -1,5 +1,6 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
+const detailPokemon = document.getElementById('detailPokemon')
 const limit = 5;
 let offset = 0;
 const maxrecord = 151;
@@ -21,6 +22,12 @@ function loadMorePokemonItens(offset, limit){
                             
                     
                         </ol>
+
+                    <div class="detailPoke">
+                        <button id="detailPokemon" type="button">
+                             Detail       
+                        </button>
+                    </div>
                     
                         <img src="${pokemon.image}" 
                             alt="${pokemon.name}">
@@ -54,3 +61,5 @@ loadMoreButton.addEventListener('click', () => {
 
     
 })
+
+detailPokemon.addEventListener('click', () =>{})
